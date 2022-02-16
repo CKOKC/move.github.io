@@ -1,0 +1,196 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        <link href="style.css" rel="stylesheet" media="all">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    body
+        header
+            a.logo(href="#")
+                i.bx.bxs-movie 
+                |Movies
+            .bx.bx-menu#menu-icon
+
+            ul.navbar
+                li
+                    a.home-active(href="#home") Home
+                li
+                    a(href="#movies") Movies
+                li
+                    a(href="#coming") Coming
+                li
+                    a(href="#newsletter") Newsletter
+            a.btn(href="#") Sign In
+        section.home.swiper#home 
+            .swiper-wrapper
+                .swiper-slide.conatiner
+                    img(src="../img/home1.jpg", alt="")
+                    .home-text 
+                        span Marvel Universe 
+                        h1 Venom: Let There #[br] Be Carnage
+                        a.btn(href="#") Book Now
+                        a.play(href="#")
+                            .bx.bx-play   
+                .swiper-slide.conatiner
+                    img(src="../img/home2.jpg", alt="")
+                    .home-text 
+                        span Marvel Universe 
+                        h1 Avengers: #[br] Infinity
+                        a.btn(href="#") Book Now
+                        a.play(href="#")
+                            .bx.bx-play   
+                .swiper-slide.conatiner
+                    img(src="../img/home1.jpg", alt="")
+                    .home-text 
+                        span Marvel Universe 
+                        h1 Spider-man #[br] Far from Home
+                        a.btn(href="#") Book Now
+                        a.play(href="#")
+                            .bx.bx-play   
+               
+            
+            .swiper-pagination
+        
+        section.movies#movies
+            h2.heading Opening This  Week
+            .movies-container
+                .box 
+                    .box-img
+                        img(src="../img/m1.jpg", alt="") 
+                    h3 Venom
+                    span 120 min | Action
+                .box 
+                    .box-img
+                        img(src="../img/m2.jpg", alt="") 
+                    h3 Dunkirk
+                    span 120 min | Adventure
+                .box 
+                    .box-img
+                        img(src="../img/m3.jpg", alt="") 
+                    h3 Batman Vs superman
+                    span 120 min | Thriller
+                .box 
+                    .box-img
+                        img(src="../img/m4.jpg", alt="") 
+                    h3 John Wick
+                    span 120 min | Adventure
+                .box 
+                    .box-img
+                        img(src="../img/m5.jpg", alt="") 
+                    h3 Aquaman
+                    span 120 min | Action
+                .box 
+                    .box-img
+                        img(src="../img/m6.jpg", alt="") 
+                    h3 Black Panther
+                    span 120 min | Thriller
+                .box 
+                    .box-img
+                        img(src="../img/m7.jpg", alt="") 
+                    h3 Thor
+                    span 120 min | Adventure
+                .box 
+                    .box-img
+                        img(src="../img/m8.png", alt="") 
+                    h3 Bumblebee
+                    span 120 min | Thriller
+                .box 
+                    .box-img
+                        img(src="../img/m9.jpg", alt="") 
+                    h3 Mortal Engines
+                    span 120 min | Action
+                .box 
+                    .box-img
+                        img(src="../img/m10.jpg", alt="") 
+                    h3 UnderWorld Blood Wars
+                    span 120 min | Action
+
+        section.coming#coming
+            h2.heading  Coming Soon
+            .coming-container.swiper
+                .swiper-wrapper
+                    .swiper-slide.box 
+                        .box-img
+                            img(src="../img/coming1.jpg", alt="") 
+                        h3 Jhony English
+                        span 120 min | Action
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming2.jpg", alt="") 
+                        h3 Warceaft
+                        span 120 min | Adventure
+                    .swiper-slide.box 
+                        .box-img
+                            img(src="../img/coming3.jpg", alt="") 
+                        h3 Rampage
+                        span 120 min | Thriller
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming4.jpg", alt="") 
+                        h3 Iron Lady
+                        span 120 min | Adventure
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming5.jpg", alt="") 
+                        h3 Justice League
+                        span 120 min | Action
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming6.jpeg", alt="") 
+                        h3 Doctor Strange
+                        span 120 min | Thriller
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming7.jpg", alt="") 
+                        h3 Captain Marvel
+                        span 120 min | Adventure
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming8.jpg", alt="") 
+                        h3 Black widow
+                        span 120 min | Thriller
+                    .swiper-slide.box 
+                        .box-img
+                            img(src="../img/coming9.jpg", alt="") 
+                        h3 Ant-Man
+                        span 120 min | Action
+                    .swiper-slide.box  
+                        .box-img
+                            img(src="../img/coming10.jpg", alt="") 
+                        h3 Guardians of the Galaxy
+                        span 120 min | Thriller
+        section.newsletter#newsletter 
+            h2 Subscribe To Get #[br]Newsletter
+            form(action="") 
+                input.email(type="email" placeholder="Enter Email..." required)
+                input.btn(type="submit" value="Subscribe")
+        section.footer
+            a.logo(href="#")
+                i.bx.bxs-movie
+                |Movies
+            .social
+                a(href="#")
+                     i.bx.bxl-facebook
+                a(href="#")
+                     i.bx.bxl-twitter
+                a(href="#")
+                     i.bx.bxl-instagram
+                a(href="#")
+                     i.bx.bxl-tiktok
+        .copyright
+            p &#169 MOVIE-DOMO 
+
+
+
+
+
+
+
+
+
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        script(src ="main.js")  
